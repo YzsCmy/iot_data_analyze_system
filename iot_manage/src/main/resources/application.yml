@@ -1,0 +1,35 @@
+server:
+#  port: 8080
+  port: 80
+  servlet:
+    path: '*.do'
+spring:
+  application:
+    name: iot-manage
+  datasource:
+    url: jdbc:mysql://localhost:3306/data_analyze_sys?characterEncoding=UTF8
+    username: root
+#    password: cmy0927
+    password: rootyzs
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .jsp
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 下划线转驼峰
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.yzs.common.model
+mapper:
+  mappers:
+  - tk.mybatis.mapper.common.Mapper
+  not-empty: true
+  style: camelhump
+  wrap-keyword: "`{0}`"
+  safe-delete: true
+  safe-update: true
+  identity: MYSQL
+
