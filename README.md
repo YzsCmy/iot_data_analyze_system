@@ -17,7 +17,7 @@ Quratz实现数据定时生成
 前端界面用的是adminLTE
 ##### 系统首页
 
-###### 网站地址：112.74.31.20   用户名密码：admin
+###### 网站地址：http://112.74.31.20   用户名密码：admin
 
 [![YEN1kF.md.jpg](https://s1.ax1x.com/2020/05/06/YEN1kF.md.jpg)](https://imgchr.com/i/YEN1kF)
 
