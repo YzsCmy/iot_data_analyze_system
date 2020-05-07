@@ -9,8 +9,8 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/data_analyze_sys?characterEncoding=UTF8
     username: root
-#    password: cmy0927
-    password: rootyzs
+    password: "*****"
+#    password: *****
     type: com.alibaba.druid.pool.DruidDataSource
   mvc:
     view:
