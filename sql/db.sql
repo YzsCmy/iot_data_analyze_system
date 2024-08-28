@@ -81,3 +81,9 @@ CREATE TABLE `user` (
   `unit_id` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `user_role` (
+  `user_id` varchar(255) NOT NULL,
+  `role_id` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_id`,`role_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
