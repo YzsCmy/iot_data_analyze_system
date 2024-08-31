@@ -137,6 +137,7 @@
 										</th>
 										<th class="sorting_asc">ID</th>
 										<th class="sorting_desc">设备类型名称</th>
+										<th class="sorting_desc">单位</th>
 										<th class="sorting_asc sorting_asc_disabled">设备数</th>
 										<th class="text-center">操作</th>
 									</tr>
@@ -148,6 +149,7 @@
 											<td><input name="ids" type="checkbox"></td>
 											<td>${deviceType.id }</td>
 											<td>${deviceType.name }</td>
+											<td>${deviceType.unit }</td>
 											<td>${deviceType.deviceNum }</td>
 											<td class="text-center">
 												<a href="${pageContext.request.contextPath}/device/findByUnitIdAndTypeId.do?unitId=${sessionScope.unitId}&typeId=${deviceType.id}" class="btn bg-olive btn-xs">详情</a>

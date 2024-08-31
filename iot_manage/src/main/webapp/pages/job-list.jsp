@@ -365,7 +365,7 @@
             //发起ajax,渲染测点下拉框
             $.ajax({
                 type: "POST",
-                url: "http://112.74.31.20:8888/job/resume.do",
+                url: "http://127.0.0.1:8888/job/resume.do",
                 data: {
                     jobName: jobName,
                     jobGroupName:jobGroup,
@@ -402,7 +402,7 @@
             //发起ajax,渲染测点下拉框
             $.ajax({
                 type: "POST",
-                url: "http://112.74.31.20:8888/job/pause.do",
+                url: "http://127.0.0.1:8888/job/pause.do",
                 data: {
                     jobName: jobName,
                     jobGroupName:jobGroup,
@@ -443,7 +443,7 @@
                 //发起ajax,渲染测点下拉框
                 $.ajax({
                     type: "POST",
-                    url: "http://112.74.31.20:8888/job/edit.do",
+                    url: "http://127.0.0.1:8888/job/edit.do",
                     data: {
                         jobName: jobName,
 						jobGroupName:groupName,

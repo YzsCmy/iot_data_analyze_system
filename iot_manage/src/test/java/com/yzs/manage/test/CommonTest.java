@@ -42,6 +42,13 @@ public class CommonTest {
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
     @Test
+    public void generatePassword() {
+        String pwd = "123";
+        String pwdEncode = encoder.encode(pwd);
+        System.out.println(pwdEncode);
+
+    }
+    @Test
     public void deviceTest() {
         Device device = new Device();
         device.setId(idWorker.nextId()+"");

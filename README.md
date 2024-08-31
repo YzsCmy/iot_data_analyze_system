@@ -1,5 +1,20 @@
 # iot_data_analyze_system
 
+部署：
+
+    1、安装mysql,kafka
+    
+    2、创建名为 data_analyze_sys 的数据库
+    
+    3、导入data_analyze_sys.sql
+    
+    4、运行ManageApplication、GenerationApplication，浏览器访问localhost
+
+    尝试使用mysql dump或DBeaver恢复数据库的功能 导入data_analyze_sys.sql
+
+    初始用户名密码：admin
+
+    数据生成主体逻辑：新增设备 -> 触发数据定时任务的创建 -> 设备数据定时生成
 
 所用技术：springboot+springsecurity+mybatis+kafka+ECharts+adminLTE
 
@@ -11,13 +26,13 @@ ECharts完成可视化图表的渲染
 
 Quratz实现数据定时生成
 
-搭建模板参考https://github.com/xkcoding/spring-boot-demo/tree/master/spring-boot-demo-task-quartz
+搭建模板参考https://github.com/xkcoding/spring-boot-demo/tree/master/demo-task-quartz
 
 
 前端界面用的是adminLTE
 ##### 系统首页
 
-###### 网站地址：http://112.74.31.20   用户名密码：admin
+###### 初始用户名密码：admin
 
 [![YEN1kF.md.jpg](https://s1.ax1x.com/2020/05/06/YEN1kF.md.jpg)](https://imgchr.com/i/YEN1kF)
 

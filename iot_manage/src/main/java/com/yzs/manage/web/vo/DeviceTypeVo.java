@@ -5,14 +5,16 @@ public class DeviceTypeVo {
     private String id;
 
     private String name;
+    private String unit;
 
     private Integer deviceNum;
 
     public DeviceTypeVo(){}
 
-    public DeviceTypeVo(String id, String name, Integer deviceNum) {
+    public DeviceTypeVo(String id, String name, String unit, Integer deviceNum) {
         this.id = id;
         this.name = name;
+        this.unit = unit;
         this.deviceNum = deviceNum;
     }
 
@@ -31,6 +33,14 @@ public class DeviceTypeVo {
     public void setName(String name) {
 
         this.name = name == null ? null : name.trim();
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public Integer getDeviceNum() {

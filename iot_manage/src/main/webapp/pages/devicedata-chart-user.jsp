@@ -281,6 +281,8 @@
         });
         $('#mydatepicker').datepicker({
             autoclose: true,
+			todayHighlight: true,
+			defaultViewDate:'today',
             language: 'zh-CN',
             format: 'yyyy-mm-dd'
         });
@@ -370,9 +372,9 @@
                         for(k in list){
                             $("#deviceSelect").append('<option value="'+list[k].id+'">'+list[k].name+'</option>');
                         }
+						$('#mydatepicker').datepicker("setDate",'now');
 
-
-                    }else {
+					}else {
 
                         console.log(data.data)
                     }

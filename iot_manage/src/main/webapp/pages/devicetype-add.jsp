@@ -107,11 +107,11 @@
 							<input type="text" class="form-control" name="name"
 								placeholder="设备类型名称" value="">
 						</div>
-						<%--<div class="col-md-2 title">设备类型描述</div>--%>
-						<%--<div class="col-md-4 data">--%>
-							<%--<input type="text" class="form-control" name="description"--%>
-								<%--placeholder="设备类型描述" value="">--%>
-						<%--</div>--%>
+						<div class="col-md-2 title">单位</div>
+						<div class="col-md-4 data">
+							<input type="text" class="form-control" name="unit"
+								placeholder="单位" value="">
+						</div>
 										
 
 					</div>

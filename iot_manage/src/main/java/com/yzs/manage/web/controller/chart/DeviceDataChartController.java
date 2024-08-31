@@ -49,7 +49,7 @@ public class DeviceDataChartController {
         String unit = typeService.findUnitByDeviceTypeId(device.getTypeId());
         HashMap<String, Object> map = new HashMap<>();
         map.put("chartVo",chartVo);
-        map.put("unit",unit);
+        map.put("unit",unit==null?"":unit);
         return new Result(true, StatusCode.OK,"获取折线图数据成功",map);
 
     }

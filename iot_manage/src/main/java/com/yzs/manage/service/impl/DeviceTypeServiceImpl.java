@@ -54,7 +54,7 @@ public class DeviceTypeServiceImpl implements IDeviceTypeService {
             for (DeviceType deviceType : deviceTypes) {
                 temp.setTypeId(deviceType.getId());
                 int i = deviceMapper.selectCount(temp);
-                res.add(new DeviceTypeVo(deviceType.getId(),deviceType.getName(),i));
+                res.add(new DeviceTypeVo(deviceType.getId(),deviceType.getName(),deviceType.getUnit(),i));
             }
 
         }else {
@@ -62,7 +62,7 @@ public class DeviceTypeServiceImpl implements IDeviceTypeService {
             for (DeviceType deviceType : deviceTypes) {
                 temp.setTypeId(deviceType.getId());
                 int i = deviceMapper.selectCount(temp);
-                res.add(new DeviceTypeVo(deviceType.getId(),deviceType.getName(),i));
+                res.add(new DeviceTypeVo(deviceType.getId(),deviceType.getName(),deviceType.getUnit(),i));
             }
         }
         return res;
